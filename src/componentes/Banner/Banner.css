@@ -1,10 +1,15 @@
 .banner {
-    background-color: #3987db;
+    background: linear-gradient(to bottom right, white 0%, white 20%, #3987db 60%, #3987db 100%);
     text-align: left;
     height: 30vh;
-
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
 }
 
 .banner img {
     max-width: 35vh;
+    z-index: 1; /* Garante que o logotipo esteja na frente da linha diagonal */
+    padding-left: 5vh;
 }
