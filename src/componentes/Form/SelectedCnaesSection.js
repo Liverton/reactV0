@@ -1,19 +1,9 @@
 import React from "react";
 import TextField from "../TextField/TextField";
+import SelectedCnaesList from "./SelectedCnaesList ";
 
-const SelectedCnaesSection = ({ selectedCnaeNumbers, handleRemoveCnae }) => {
-  return (
-    <div label="CNAE">
-      <div className="cnae-fields">
-        {selectedCnaeNumbers.map((cnaeNumber, index) => (
-          <div key={index}>
-            <TextField label={`CNAE ${index + 1}`} value={cnaeNumber} />
-            <button onClick={() => handleRemoveCnae(cnaeNumber)}>Remover</button>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
+const SelectedCnaesSection = ({ selectedCnaeNumbers, handleRemoveCnae }) => (
+  <SelectedCnaesList selectedCnaeNumbers={selectedCnaeNumbers} handleRemoveCnae={handleRemoveCnae} />
+);
 
 export default SelectedCnaesSection;

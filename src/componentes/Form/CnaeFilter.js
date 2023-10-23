@@ -1,4 +1,3 @@
-// CnaeFilter.js
 import React from "react";
 
 const CnaeFilter = ({ searchTerm, handleFilterChange }) => (
