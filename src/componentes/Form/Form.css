@@ -6,15 +6,61 @@
 
 .formEnterprise form {
     max-width: 80%;
-    width: 600px; /* Defina a largura fixa desejada */
-    height: 500px; /* Defina a altura fixa desejada */
+    width: 600px;
+    /* Defina a largura fixa desejada */
+    height: 500px;
+    /* Defina a altura fixa desejada */
     background-color: #f2f2f2;
     border-radius: 20px;
     padding: 36px 64px;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
-    overflow-y: auto; /* Adicione rolagem vertical se o conteúdo exceder a altura */
+    overflow-y: auto;
+    /* Adicione rolagem vertical se o conteúdo exceder a altura */
 }
 
 .customLabel {
-    font-size: 24px; /* Ajuste o tamanho da fonte conforme necessário */
+    font-size: 24px;
+    /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+/* CSS */
+.cnae-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cnae-info {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    /* Ocupa o espaço disponível entre label e value */
+}
+
+.cnae-label {
+    font-size: 18px;
+    margin-right: 10px;
+    /* Adiciona espaço entre a label e o valor */
+}
+
+.delete-button {
+    display: flex;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+
+}
+
+.deleteIcon, .addIcon {
+    width: 25px;
+    height: 25px;
+}
+
+.cnae-button {
+    display: flex;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px; /* Aumenta a área de clique em 10px */
 }

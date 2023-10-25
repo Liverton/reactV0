@@ -10,7 +10,9 @@ const CnaeSelectionSection = ({ selectedCnae, filteredCnaes, handleCnaeSelectCha
       placeholder={`Selecione ou digite um CNAE`}
       onChange={handleCnaeSelectChange}
     />
-    <button type="button" onClick={handleAddCnae}>Adicionar CNAE</button>
+    <button type="button" onClick={handleAddCnae} className="cnae-button">
+      <img src="img/addIcon.svg" alt="add" className="addIcon" />
+    </button>
   </div>
 );
 
